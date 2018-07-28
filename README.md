@@ -1,2 +1,2 @@
 # hi-poc.github.io
-Demonstrate Basic Grid Functionality
+Demonstrate Basic Grid Functionality.
