@@ -1,0 +1,182 @@
+
+
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Horizontal Integration View Engine</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Static App Icons -->
+    <link rel="shortcut icon" href="/favicon.ico?v=1">
+    <link rel="stylesheet" href="//use.typekit.net/nhf5eoi.css">
+    <link rel="stylesheet" href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css">
+    <link rel="stylesheet" href="stylesheets/main.css">
+    <script src="javascripts/vendor.js"></script>
+    <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
+    
+  </head>
+  
+  <body>
+    <div class="wrapper">
+      
+<!-- 
+  * Find Products  
+  *
+  * Class Hierarchy:
+  *
+  *   .find-products
+  *     .find-products-header
+  *     .find-products-body
+  *     .find-products-footer
+  *
+  *
+  -->
+
+  <!-- Without Bootstrap -->
+
+  <section class="off-grid container source" data-toggle="tooltip" data-placement="right" title="Off-Grid">
+    <div class="off-grid-intro">
+      <p>From the moment a blueberry is picked, a clock begins to tick. For its flavor is <br /> never better, brighter, or sweeter than when it’s perfectly ripe. Prolonging that freshness – that fleeting<br /> peak taste and texture – is the single-minded mission of Sub-Zero.</p>
+    </div>
+    <div class="off-grid-body">
+      <img src="images/product-1.png" alt="Placeholder Image" />
+      <img src="images/product-2.png" alt="Placeholder Image" />
+      <img src="images/product-3.png" alt="Placeholder Image" />
+    </div>
+    <div class="off-grid-footer">
+      <a href="#"><img src="images/find-products-cta.png" alt="Find Products" /></a> 
+    </div>
+
+    <div class="grid-overlay container">
+      <div class="row">
+        <div class="col-md-1"><div class="col-fill"></div></div>
+        <div class="col-md-1"><div class="col-fill"></div></div>
+        <div class="col-md-1"><div class="col-fill"></div></div>
+        <div class="col-md-1"><div class="col-fill"></div></div>
+        <div class="col-md-1"><div class="col-fill"></div></div>
+        <div class="col-md-1"><div class="col-fill"></div></div>
+        <div class="col-md-1"><div class="col-fill"></div></div>
+        <div class="col-md-1"><div class="col-fill"></div></div>
+        <div class="col-md-1"><div class="col-fill"></div></div>
+        <div class="col-md-1"><div class="col-fill"></div></div>
+        <div class="col-md-1"><div class="col-fill"></div></div>
+        <div class="col-md-1"><div class="col-fill"></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Nested Example -->
+
+  <section class="find-products container source" data-toggle="tooltip" data-placement="right" title="w/ Nested 3 Column Grid">
+    <div class="find-products-header row">
+      <div class="col-md-10 col-md-offset-1">
+        <p>From the moment a blueberry is picked, a clock begins to tick. For its flavor is <br /> never better, brighter, or sweeter than when it’s perfectly ripe. Prolonging that freshness – that fleeting<br /> peak taste and texture – is the single-minded mission of Sub-Zero.</p>
+      </div>
+    </div>
+    <div class="find-products-body row">
+      <div class="col-md-10 col-md-offset-1">
+        <div class="row">
+          <div class="col-md-4">
+            <h4><a href="#">Full-Size</a></h4>
+            <img src="images/product-1.png" alt="Placeholder Image" />
+          </div>
+          <div class="col-md-4">
+            <h4><a href="#">Wine</a></h4>
+            <img src="images/product-2.png" alt="Placeholder Image" />
+          </div>
+          <div class="col-md-4">
+            <h4><a href="#">Undercounter</a></h4>
+            <img src="images/product-3.png" alt="Placeholder Image" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="find-products-footer row">
+      <div class="col-md-12">
+        <a href="#"><img src="images/find-products-cta.png" alt="Find Products" /></a> 
+      </div>
+    </div>
+
+    <div class="grid-overlay container">
+      <div class="row">
+        <div class="col-md-1"><div class="col-fill"></div></div>
+        <div class="col-md-1"><div class="col-fill"></div></div>
+        <div class="col-md-1"><div class="col-fill"></div></div>
+        <div class="col-md-1"><div class="col-fill"></div></div>
+        <div class="col-md-1"><div class="col-fill"></div></div>
+        <div class="col-md-1"><div class="col-fill"></div></div>
+        <div class="col-md-1"><div class="col-fill"></div></div>
+        <div class="col-md-1"><div class="col-fill"></div></div>
+        <div class="col-md-1"><div class="col-fill"></div></div>
+        <div class="col-md-1"><div class="col-fill"></div></div>
+        <div class="col-md-1"><div class="col-fill"></div></div>
+        <div class="col-md-1"><div class="col-fill"></div></div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Non-nested Example -->
+
+  <section class="find-products container source" data-toggle="tooltip" data-placement="right" title="w/ Standard 3 Column Grid">
+    <div class="find-products-header row">
+      <div class="col-md-10 col-md-offset-1">
+        <p>From the moment a blueberry is picked, a clock begins to tick. For its flavor is <br /> never better, brighter, or sweeter than when it’s perfectly ripe. Prolonging that freshness – that fleeting<br /> peak taste and texture – is the single-minded mission of Sub-Zero.</p>
+      </div>
+    </div>
+    <div class="find-products-body row">
+      <div class="col-md-4">
+        <h4><a href="#">Full-Size</a></h4>
+        <img src="images/product-1.png" alt="Placeholder Image" />
+      </div>
+      <div class="col-md-4">
+        <h4><a href="#">Wine</a></h4>
+        <img src="images/product-2.png" alt="Placeholder Image" />
+      </div>
+      <div class="col-md-4">
+        <h4><a href="#">Undercounter</a></h4>
+        <img src="images/product-3.png" alt="Placeholder Image" />
+      </div>
+    </div>
+    <div class="find-products-footer row">
+      <div class="col-md-12">
+        <a href="#"><img src="images/find-products-cta.png" alt="Find Products" /></a>
+      </div>
+    </div>
+
+    <div class="grid-overlay container">
+      <div class="row">
+        <div class="col-md-1"><div class="col-fill"></div></div>
+        <div class="col-md-1"><div class="col-fill"></div></div>
+        <div class="col-md-1"><div class="col-fill"></div></div>
+        <div class="col-md-1"><div class="col-fill"></div></div>
+        <div class="col-md-1"><div class="col-fill"></div></div>
+        <div class="col-md-1"><div class="col-fill"></div></div>
+        <div class="col-md-1"><div class="col-fill"></div></div>
+        <div class="col-md-1"><div class="col-fill"></div></div>
+        <div class="col-md-1"><div class="col-fill"></div></div>
+        <div class="col-md-1"><div class="col-fill"></div></div>
+        <div class="col-md-1"><div class="col-fill"></div></div>
+        <div class="col-md-1"><div class="col-fill"></div></div>
+      </div>
+    </div>
+  </section>
+
+
+  <div class="controller">
+    <form>
+      <ul>
+        <li>
+          <input type="checkbox" data-toggle="toggle">
+          Toggle Grid
+        </li>
+      </ul>
+    </form>
+  </div>
+
+    </div>
+    
+    <script src="javascripts/main.js"></script>
+    
+  </body>
+</html>
