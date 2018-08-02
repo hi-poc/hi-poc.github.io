@@ -61,8 +61,6 @@ Prism.languages.scss=Prism.languages.extend("css",{comment:{pattern:/(^|[^\\])(?
   // toggle views
 
   var toggleViews = function toggleComponents(view) {
-    console.log($views.length);
-    
     $views.each(function() {
       $(this).removeClass('active');
     });
