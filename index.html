@@ -11,72 +11,245 @@
     <link rel="shortcut icon" href="/favicon.ico?v=1">
     <link rel="stylesheet" href="//use.typekit.net/nhf5eoi.css">
     <link rel="stylesheet" href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css">
+    <link rel="stylesheet" href="//min.gitcdn.xyz/repo/wintercounter/Protip/master/protip.min.css">
     <link rel="stylesheet" href="stylesheets/main.css">
     <script src="javascripts/vendor.js"></script>
     <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
+    <script src="//min.gitcdn.xyz/repo/wintercounter/Protip/master/protip.min.js"></script>
     
   </head>
   
   <body>
-    <div class="wrapper">
-      
-<!-- 
-  * Find Products  
-  *
-  * Class Hierarchy:
-  *
-  *   .find-products
-  *     .find-products-header
-  *     .find-products-body
-  *     .find-products-footer
-  *
-  *
-  -->
+    
+<div class="wrapper">
 
-  <!-- Without Bootstrap -->
+  <!-- Intor -->
 
-  <section class="off-grid container source" data-toggle="tooltip" data-placement="right" title="Off-Grid">
-    <div class="off-grid-intro">
-      <p>From the moment a blueberry is picked, a clock begins to tick. For its flavor is <br /> never better, brighter, or sweeter than when it’s perfectly ripe. Prolonging that freshness – that fleeting<br /> peak taste and texture – is the single-minded mission of Sub-Zero.</p>
+  <section class="container">
+    <h2>The Bootstrap Grid</h2>
+    <div class="row">
+      <div class="col-md-10 col-md-offset-1">
+        <p class="lead">The Bootstrap library includes a responsive, mobile first grid system that appropriately scales up to 12 columns. The following interactive primer will provide you with a brief introduction to the Bootstrap grid and demonstrate how it can be easily integrated into your projects.</p> 
+      </div>
     </div>
-    <div class="off-grid-body">
-      <img src="images/product-1.png" alt="Placeholder Image" />
-      <img src="images/product-2.png" alt="Placeholder Image" />
-      <img src="images/product-3.png" alt="Placeholder Image" />
-    </div>
-    <div class="off-grid-footer">
-      <a href="#"><img src="images/find-products-cta.png" alt="Find Products" /></a> 
-    </div>
+  </section>
+  
+  <!-- Basics -->
 
-    <div class="grid-overlay container">
-      <div class="row">
-        <div class="col-md-1"><div class="col-fill"></div></div>
-        <div class="col-md-1"><div class="col-fill"></div></div>
-        <div class="col-md-1"><div class="col-fill"></div></div>
-        <div class="col-md-1"><div class="col-fill"></div></div>
-        <div class="col-md-1"><div class="col-fill"></div></div>
-        <div class="col-md-1"><div class="col-fill"></div></div>
-        <div class="col-md-1"><div class="col-fill"></div></div>
-        <div class="col-md-1"><div class="col-fill"></div></div>
-        <div class="col-md-1"><div class="col-fill"></div></div>
-        <div class="col-md-1"><div class="col-fill"></div></div>
-        <div class="col-md-1"><div class="col-fill"></div></div>
-        <div class="col-md-1"><div class="col-fill"></div></div>
+  <section class="container">
+    <h2>The Basics</h2>
+    <div class="row">
+      <div class="col-md-10 col-md-offset-1">
+        <p class="lead">The Bootstrap grid system is used for creating page layouts through a series of rows and columns that wrap content.  Mastering the Bootstrap grid is as simple as mastering the following rules.</p>
+      </div>
+    </div>
+    <div class="row row-flex">
+      <div class="col-md-5 col-md-offset-1 col-xs-12">
+        <h4>Key Ingredients</h4>
+        <ul>
+          <li>Container</li>
+          <li>Rows</li>
+          <li>Colums</li>
+        </ul>
+        <h4>Rules of the Road</h4> 
+        <ul>
+          <li>Rows must be placed within a container.</li>
+          <li>Rows are used to create groups of columns.</li>
+          <li>Content must be placed within columns.</li>
+          <li>Columns are the only immediate children of rows.</li>
+          <li>Columns create gutters via padding.</li>
+          <li>Columns are created by specifying a number up to twelve.</li>
+        </ul>
+      </div>
+      <div class="col-md-5 col-xs-12">
+        <div class="grid-intro-container protip" data-pt-title="Container" data-pt-auto-show="true" data-pt-size="small" data-pt-position="left-top" data-pt-trigger="sticky" data-pt-gravity="false">
+          <div class="grid-intro-row protip" data-pt-title="Row" data-pt-auto-show="true" data-pt-size="small" data-pt-position="top-right" data-pt-trigger="sticky" data-pt-gravity="false">
+            <div class="grid-intro-col">
+              <div class="grid-intro-fill"></div>
+            </div>
+            <div class="grid-intro-col protip" data-pt-title="Columns" data-pt-auto-show="true" data-pt-size="small" data-pt-placement="outside" data-pt-position="top-left" data-pt-trigger="sticky" data-pt-gravity="false">
+              <div class="grid-intro-fill"></div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- Nested Example -->
+  <!-- Dimensions -->
 
-  <section class="find-products container source" data-toggle="tooltip" data-placement="right" title="w/ Nested 3 Column Grid">
-    <div class="find-products-header row">
+  <section class="container">
+    <h2>Grid Dimensions</h2> 
+    
+    <div class="row">
       <div class="col-md-10 col-md-offset-1">
-        <p>From the moment a blueberry is picked, a clock begins to tick. For its flavor is <br /> never better, brighter, or sweeter than when it’s perfectly ripe. Prolonging that freshness – that fleeting<br /> peak taste and texture – is the single-minded mission of Sub-Zero.</p>
+        <p class="lead">The Bootstrap grid follows a mobile-first approach, beggining with the smallest screen size and progressing in size to accomodate larger viewports.</p>
+
+        <h4>Device Dimensions</h4>
+        <table class="dimensions table table-bordered table-striped">
+          <thead>
+            <tr>
+              <th></th>
+              <th>Device Width</th>
+              <th>Container Width</th>
+              <th>Content Width</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Extra Small Devices</td>
+              <td>less than 768px</td>
+              <td>auto</td>
+              <td>auto</td>
+            </tr>
+            <tr>
+              <td>Small Devices</td>
+              <td>768px and up</td>
+              <td>750px</td>
+              <td>~720px</td>
+            </tr>
+            <tr>
+              <td>Medium Devices</td>
+              <td>992px and up</td>
+              <td>970px</td>
+              <td>~940px</td>
+            </tr>
+            <tr>
+              <td>Large Devices</td>
+              <td>1200px and up</td>
+              <td>1170px</td>
+              <td>~1140px</td>
+            </tr>
+          </tbody>
+        </table>
+        <h4>Options</h4>
+        <p>See how aspects of the Bootstrap grid system work across multiple devices.</p> 
+        <table class="table table-bordered table-striped">
+          <thead>
+            <tr>
+              <th></th>
+              <th>Extra Small Devices</th>
+              <th>Small Devices</th>
+              <th>Medium Devices</th>
+              <th>Large Devices</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr> 
+              <th scope="row"># of Columns</th> 
+              <td colspan="4">12</td> 
+            </tr> 
+            <tr> 
+              <th scope="row">Column Width</th> 
+              <td>Auto</td> 
+              <td>~62px</td> 
+              <td>~81px</td>
+              <td>~97px</td>
+            </tr>
+            <tr> 
+              <th scope="row">Gutter Width</th> 
+              <td colspan="4">30px (15px on each side of a column)</td> 
+            </tr>
+          </tbody> 
+        </table>
       </div>
     </div>
-    <div class="find-products-body row">
+  </section>
+
+  <!-- Layout & Structure -->
+
+  <section class="container">
+    <h2>Layout &amp; Structure</h2>
+    <div class="row">
       <div class="col-md-10 col-md-offset-1">
-        <div class="row">
+        <p class="lead">Using a single set of grid classes, create a basic grid system that begins stacked when viewed from mobile and tablet devices (the extra small to small range) before becoming horizontal on desktop (medium) devices.</p> 
+      </div>
+    </div>
+    <div class="row show-grid">
+      <div class="col-md-1">
+        <div class="col-fill protip" data-pt-title="Column width is based on a range from 1-12" data-pt-auto-show="false" data-pt-size="small" data-pt-position="top-left" data-pt-offset-left="12" data-pt-gravity="false">1</div>
+      </div>
+      <div class="col-md-1">
+        <div class="col-fill">1</div>
+      </div>
+      <div class="col-md-1">
+        <div class="col-fill">1</div>
+      </div>
+      <div class="col-md-1">
+        <div class="col-fill">1</div>
+      </div>
+      <div class="col-md-1">
+        <div class="col-fill">1</div>
+      </div>
+      <div class="col-md-1">
+        <div class="col-fill">1</div>
+      </div>
+      <div class="col-md-1">
+        <div class="col-fill">1</div>
+      </div>
+      <div class="col-md-1">
+        <div class="col-fill">1</div>
+      </div>
+      <div class="col-md-1">
+        <div class="col-fill">1</div>
+      </div>
+      <div class="col-md-1">
+        <div class="col-fill">1</div>
+      </div>
+      <div class="col-md-1">
+        <div class="col-fill">1</div>
+      </div>
+      <div class="col-md-1">
+        <div class="col-fill">1</div>
+      </div>
+    </div>
+    <div class="row show-grid">
+      <div class="col-md-8 protip" data-pt-title="The gutter is the sum of padding between columns" data-pt-auto-show="false" data-pt-size="small" data-pt-position="top-right" data-pt-offset-left="20" data-pt-gravity="false">
+        <div class="col-fill">8</div>
+      </div>
+      <div class="col-md-4">
+        <div class="col-fill">4</div>
+      </div> 
+    </div>
+    <div class="row show-grid">
+      <div class="col-md-4">
+        <div class="col-fill">4</div> 
+      </div> 
+      <div class="col-md-4">
+        <div class="col-fill">4</div> 
+      </div>
+      <div class="col-md-4">
+        <div class="col-fill">4</div> 
+      </div> 
+    </div>
+    <div class="row show-grid">
+      <div class="col-md-6">
+        <div class="col-fill">6</div> 
+      </div> 
+      <div class="col-md-6">
+        <div class="col-fill">6</div> 
+      </div> 
+    </div>
+
+    <div class="row show-grid">
+      <div class="col-md-10 col-md-offset-1">
+        <div class="col-fill protip" data-pt-title="Offsets position columns without adding markup" data-pt-auto-show="false" data-pt-size="small" data-pt-position="top-left" data-pt-gravity="false">10</div> 
+      </div> 
+    </div>  
+  </section>
+
+  <!-- Components -->
+
+  <section class="component container">
+    <h2>Designing to the Grid</h2>
+    <div class="component-view on-grid">
+      <div class="find-products">
+        <div class="find-products-header row">
+          <div class="col-md-10 col-md-offset-1">
+            <p class="">From the moment a blueberry is picked, a clock begins to tick. For its flavor is never better, brighter, or sweeter than when it’s perfectly ripe. Prolonging that freshness – that fleeting peak taste and texture – is the single-minded mission of Sub-Zero.</p>
+          </div>
+        </div>
+        <div class="find-products-body row">
           <div class="col-md-4">
             <h4><a href="#">Full-Size</a></h4>
             <img src="images/product-1.png" alt="Placeholder Image" />
@@ -90,91 +263,101 @@
             <img src="images/product-3.png" alt="Placeholder Image" />
           </div>
         </div>
+        <div class="find-products-footer row">
+          <div class="col-md-12">
+            <a href="#"><img src="images/find-products-cta.png" alt="Find Products" /></a>
+          </div>
+        </div>
+      </div>
+      <div class="grid-overlay">
+        <div class="row">
+          <div class="col-md-4"><div class="col-fill"></div></div>
+          <div class="col-md-4"><div class="col-fill"></div></div>
+          <div class="col-md-4"><div class="col-fill"></div></div>
+        </div>
       </div>
     </div>
-    <div class="find-products-footer row">
-      <div class="col-md-12">
-        <a href="#"><img src="images/find-products-cta.png" alt="Find Products" /></a> 
-      </div>
-    </div>
-
-    <div class="grid-overlay container">
-      <div class="row">
-        <div class="col-md-1"><div class="col-fill"></div></div>
-        <div class="col-md-1"><div class="col-fill"></div></div>
-        <div class="col-md-1"><div class="col-fill"></div></div>
-        <div class="col-md-1"><div class="col-fill"></div></div>
-        <div class="col-md-1"><div class="col-fill"></div></div>
-        <div class="col-md-1"><div class="col-fill"></div></div>
-        <div class="col-md-1"><div class="col-fill"></div></div>
-        <div class="col-md-1"><div class="col-fill"></div></div>
-        <div class="col-md-1"><div class="col-fill"></div></div>
-        <div class="col-md-1"><div class="col-fill"></div></div>
-        <div class="col-md-1"><div class="col-fill"></div></div>
-        <div class="col-md-1"><div class="col-fill"></div></div>
-      </div>
-    </div>
-  </section>
-  
-  <!-- Non-nested Example -->
-
-  <section class="find-products container source" data-toggle="tooltip" data-placement="right" title="w/ Standard 3 Column Grid">
-    <div class="find-products-header row">
-      <div class="col-md-10 col-md-offset-1">
+    <div class="component-view off-grid">
+      <div class="off-grid-intro">
         <p>From the moment a blueberry is picked, a clock begins to tick. For its flavor is <br /> never better, brighter, or sweeter than when it’s perfectly ripe. Prolonging that freshness – that fleeting<br /> peak taste and texture – is the single-minded mission of Sub-Zero.</p>
       </div>
-    </div>
-    <div class="find-products-body row">
-      <div class="col-md-4">
-        <h4><a href="#">Full-Size</a></h4>
-        <img src="images/product-1.png" alt="Placeholder Image" />
+      <div class="off-grid-body">
+        <div class="off-grid-body-item">
+          <h4><a href="#">Full-Size</a></h4>
+          <img src="images/product-1.png" alt="Placeholder Image" />    
+        </div>
+        <div class="off-grid-body-item">
+          <h4><a href="#">Wine</a></h4>
+          <img src="images/product-2.png" alt="Placeholder Image" />
+        </div>
+        <div class="off-grid-body-item">
+          <h4><a href="#">Undercounter</a></h4>
+          <img src="images/product-3.png" alt="Placeholder Image" />
+        </div>
       </div>
-      <div class="col-md-4">
-        <h4><a href="#">Wine</a></h4>
-        <img src="images/product-2.png" alt="Placeholder Image" />
+      <div class="off-grid-footer">
+        <a href="#"><img src="images/find-products-cta.png" alt="Find Products" /></a> 
       </div>
-      <div class="col-md-4">
-        <h4><a href="#">Undercounter</a></h4>
-        <img src="images/product-3.png" alt="Placeholder Image" />
-      </div>
-    </div>
-    <div class="find-products-footer row">
-      <div class="col-md-12">
-        <a href="#"><img src="images/find-products-cta.png" alt="Find Products" /></a>
+
+      <div class="grid-overlay">
+        <div class="row">
+          <div class="col-md-1"><div class="col-fill"></div></div>
+          <div class="col-md-1"><div class="col-fill"></div></div>
+          <div class="col-md-1"><div class="col-fill"></div></div>
+          <div class="col-md-1"><div class="col-fill"></div></div>
+          <div class="col-md-1"><div class="col-fill"></div></div>
+          <div class="col-md-1"><div class="col-fill"></div></div>
+          <div class="col-md-1"><div class="col-fill"></div></div>
+          <div class="col-md-1"><div class="col-fill"></div></div>
+          <div class="col-md-1"><div class="col-fill"></div></div>
+          <div class="col-md-1"><div class="col-fill"></div></div>
+          <div class="col-md-1"><div class="col-fill"></div></div>
+          <div class="col-md-1"><div class="col-fill"></div></div>
+        </div>
       </div>
     </div>
 
-    <div class="grid-overlay container">
-      <div class="row">
-        <div class="col-md-1"><div class="col-fill"></div></div>
-        <div class="col-md-1"><div class="col-fill"></div></div>
-        <div class="col-md-1"><div class="col-fill"></div></div>
-        <div class="col-md-1"><div class="col-fill"></div></div>
-        <div class="col-md-1"><div class="col-fill"></div></div>
-        <div class="col-md-1"><div class="col-fill"></div></div>
-        <div class="col-md-1"><div class="col-fill"></div></div>
-        <div class="col-md-1"><div class="col-fill"></div></div>
-        <div class="col-md-1"><div class="col-fill"></div></div>
-        <div class="col-md-1"><div class="col-fill"></div></div>
-        <div class="col-md-1"><div class="col-fill"></div></div>
-        <div class="col-md-1"><div class="col-fill"></div></div>
+    <div class="controller">
+      <div class="controller-btn-group">
+        <div class="btn-group" role="group" aria-label="...">
+          <button type="button" class="btn btn-default" data-view="off-grid">Off-Grid</button>
+          <button type="button" class="btn btn-default" data-view="on-grid">On-Grid</button>
+        </div>
+      </div>
+
+      <div class="contoller-toggle">
+        <input type="checkbox" data-toggle="toggle">
+        Grid Overlay
       </div>
     </div>
+
   </section>
 
+  <!-- text -->
 
-  <div class="controller">
-    <form>
-      <ul>
-        <li>
-          <input type="checkbox" data-toggle="toggle">
-          Toggle Grid
-        </li>
-      </ul>
-    </form>
-  </div>
+  <section class="text container">
+    <h2>Working with Text</h2> 
 
-    </div>
+    <div class="row">
+      <div class="col-md-10 col-md-offset-1">
+
+        <p class="border protip" data-pt-title="This paragraph uses hard breaks to mimic designs" data-pt-size="normal" data-pt-placement="outside" data-pt-position="top-left" data-pt-gravity="false">
+          <span class="protip" data-pt-title="Formatting text with hard breaks will not scale well to responsive layouts" data-pt-size="normal" data-pt-placement="outside" data-pt-position="bottom-right" data-pt-offset-top="1" data-pt-gravity="false">
+            From the moment a blueberry is picked, a clock begins to tick. For its flavor is <br> never better, brighter, or sweeter than when it’s perfectly ripe. Prolonging that freshness – that fleeting<br> peak taste and texture – is the single-minded mission of Sub-Zero.
+          </span>
+        </p>
+
+        <p class="border protip" data-pt-title="This paragraph flows text natively" data-pt-size="normal" data-pt-placement="outside" data-pt-position="top-right" data-pt-gravity="false">
+          <span class="protip" data-pt-title="Text will scale well to responsive layouts" data-pt-size="normal" data-pt-placement="outside" data-pt-position="bottom-left" data-pt-offset-top="1" data-pt-gravity="false">
+            From the moment a blueberry is picked, a clock begins to tick. For its flavor is never better, brighter, or sweeter than when it’s perfectly ripe. Prolonging that freshness – that fleeting peak taste and texture – is the single-minded mission of Sub-Zero.
+          </span>
+        </p>
+
+      </div>
+    </div>    
+  </section>   
+</div>
+
     
     <script src="javascripts/main.js"></script>
     
