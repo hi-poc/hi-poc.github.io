@@ -5524,7 +5524,7 @@ h2 {
   display: flex;
   -ms-flex-pack: justify;
       justify-content: space-between;
-  margin: 55px auto 0;
+  margin: 45px auto 0;
   text-align: center;
   width: 883px; }
   .off-grid .off-grid-body h4 {

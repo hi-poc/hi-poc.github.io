@@ -84,6 +84,5 @@ Prism.languages.scss=Prism.languages.extend("css",{comment:{pattern:/(^|[^\\])(?
   };
   
   $(window).on('load', init);
-
 })(window.jQuery);
 //# sourceMappingURL=main.js.map
